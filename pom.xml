@@ -25,13 +25,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!-- Tool to hot reload changes so no need to restart
+		     If you are using intellij, need to enable few settings.
+		     Check this post. https://stackoverflow.com/a/69449906/20010353 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<!--	In memory database, later we can switch to persistent DB.	-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
